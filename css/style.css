@@ -316,6 +316,57 @@ h6 {
   position: absolute;
 }
 
+/* ===== anim ================================================================================================================================================================== */
+
+._anim-items {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+  -o-transition: 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+  transition: 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+}
+
+._anim-items._active {
+  opacity: 1;
+  visibility: visible;
+}
+
+._anim-fadeInTop {
+  -webkit-transform: translate(0, -25px);
+      -ms-transform: translate(0, -25px);
+          transform: translate(0, -25px);
+}
+
+._anim-fadeInTop._active {
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
+}
+
+._anim-fadeInRight {
+  -webkit-transform: translate(20%, 0);
+      -ms-transform: translate(20%, 0);
+          transform: translate(20%, 0);
+}
+
+._anim-fadeInRight._active {
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
+}
+
+._anim-fadeInBottom {
+  -webkit-transform: translate(0, 20px);
+      -ms-transform: translate(0, 20px);
+          transform: translate(0, 20px);
+}
+
+._anim-fadeInBottom._active {
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
+}
+
 /* ===== шапка ================================================================================================================================================================== */
 
 .header {
@@ -1241,7 +1292,7 @@ h6 {
 
 .why-we__shield {
   position: absolute;
-  left: 440px;
+  left: 500px;
   top: 385px;
 }
 
