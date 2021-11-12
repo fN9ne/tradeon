@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- данные -->
+	<!-- кодировка страницы -->
+<meta charset="utf-8">
+<!-- адаптивность -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- иконка -->
+<link href="img/favicon/favicon.png" rel="apple-touch-icon" sizes="64x64">
+<link href="img/favicon/favicon.png" rel="shortcut icon">
+<link href="img/favicon/favicon.png" rel="icon">
+<!-- заголовок -->
+<title>TradeON</title>
+<!-- стили -->
+<link rel="stylesheet" href="css/fonts.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- шрифт Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- оборолчка страницы -->
+	<div class="wrapper">
+		<!-- шапка сайта -->
+		<header class="header">
+	<div class="header__container _container">
+		<a href="#" class="header__logo"><img src="img/logo.png"></a>
+		<nav class="header-nav" data-da="burger-content__body, 1, 1050">
+			<ul class="header-nav__list">
+				<li class="header-nav__item"><a class="header-nav__link" href="#">Главная</a></li>
+				<li class="header-nav__item"><a class="header-nav__link" href="#">О нас</a></li>
+				<li class="header-nav__item"><a class="header-nav__link" href="#">Наши продукты</a></li>
+				<li class="header-nav__item"><a class="header-nav__link" href="#">Как подключить</a></li>
+				<li class="header-nav__item"><a class="header-nav__link" href="#">Планы подписок</a></li>
+				<li class="header-nav__item"><a class="header-nav__link header-nav__link_mob-hide" href="#">Мульти-торговля и кэшбэк</a></li>
+				<li class="header-nav__item"><a class="header-nav__link header-nav__link_mob-show" href="#">Мульти-торговля</a></li>
+			</ul>
+		</nav>
+		<div class="header-account" data-da="burger-content__body, 2, 1050">
+			<svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M9.80568 25.0774C5.19091 25.0774 1.25 24.3593 1.25 21.4833C1.25 18.6073 5.16591 15.9524 9.80568 15.9524C14.4205 15.9524 18.3614 18.5816 18.3614 21.4576C18.3614 24.3324 14.4455 25.0774 9.80568 25.0774Z" stroke="#0F0B22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M9.79662 11.967C12.825 11.967 15.2796 9.5125 15.2796 6.48409C15.2796 3.45568 12.825 1 9.79662 1C6.76821 1 4.31253 3.45568 4.31253 6.48409C4.3023 9.50227 6.7398 11.9568 9.75799 11.967C9.77162 11.967 9.78412 11.967 9.79662 11.967Z" stroke="#0F0B22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</div>
+		<div class="header-burger">
+			<div class="header-burger__line header-burger__line_1"></div>
+			<div class="header-burger__line header-burger__line_2"></div>
+			<div class="header-burger__line header-burger__line_3"></div>
+		</div>
+	</div>
+</header>
+<div class="burger-content">
+	<div class="burger-content__body">
+		<div class="burger-content__close"></div>
+	</div>
+</div>
+<div class="popup popup-account">
+	<div class="popup__body">
+		<div class="popup__area"></div>
+		<div class="popup-account__container">
+			<div class="popup-account__title">Авторизация</div>
+			<div class="popup-account__content">
+				<div class="popup-account__line"></div>
+				<form action="#" id="accountForm" method="post">
+					<div class="popup-account__input">
+						<input type="text" name="username" placeholder="Логин">
+					</div>
+					<div class="popup-account__input">
+						<input type="password" name="userpass" placeholder="Пароль">
+					</div>
+					<div class="popup-account__button">
+						<button type="submit"><span>Войти</span></button>
+					</div>
+					<div class="popup-account__links">
+						<a href="#" class="popup-account__link popup-account__recovery">Восстановление</a>
+						<a href="#" class="popup-account__link popup-account__registration">Регистрация</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+		<!-- контент страницы -->
+		<main class="page">
+			<section class="welcome">
+				<div class="welcome__abstract-lines"><img src="img/abstarcat-lines.png"></div>
+				<div class="welcome__container _container">
+					<div class="welcome__company-row"><span>tradeon</span><span>tradeon</span><span>tradeon</span><span>tradeon</span><span>tradeon</span><span>tradeon</span><span>tradeon</span></div>
+					<div class="welcome__offer">
+						<div class="welcome__circles welcome__circles_1 circles" data-speed="1" style="transition: 0.55s cubic-bezier(.25,.46,.45,.94)"><img src="img/circles.svg"></div>
+						<div class="welcome__circles welcome__circles_2 circles" data-speed="2" style="transition: 0.8s cubic-bezier(.25,.46,.45,.94)"><img src="img/circles.svg"></div>
+						<div class="welcome__title">Ваш инструмент <br>для автоматического заработка <br>на внутриигровых предметах</div>
+						<a href="#" class="welcome__button button"><span>подробнее</span></a>
+						<ul class="welcome-socials">
+							<li class="welcome-socials__item"><a href="#" class="welcome-socials__link"><img src="img/socials/vk.svg"></a></li>
+							<li class="welcome-socials__item"><a href="#" class="welcome-socials__link"><img src="img/socials/telegram.svg"></a></li>
+							<li class="welcome-socials__item"><a href="#" class="welcome-socials__link"><img src="img/socials/instagram.svg"></a></li>
+							<li class="welcome-socials__item"><a href="#" class="welcome-socials__link"><img src="img/socials/youtube.svg"></a></li>
+							<li class="welcome-socials__item"><a href="#" class="welcome-socials__link"><img src="img/socials/twitter.svg"></a></li>
+						</ul>
+					</div>
+					<div class="welcome__ill">
+						<img src="img/phone.png">
+						<div class="welcome__circles welcome__circles_3 circles" data-speed="2" style="transition: 0.55s cubic-bezier(.25,.46,.45,.94)"><img src="img/circles.svg"></div>
+						<div class="welcome__circles welcome__circles_4 circles" data-speed="4" style="transition: 0.55s cubic-bezier(.25,.46,.45,.94)"><img src="img/circles.svg"></div>
+						<div class="welcome__ill-item welcome__ill-item_awp" data-speed="2" style="transition: 0.55s cubic-bezier(.25,.46,.45,.94)">
+							<img src="img/welcomeItems/awp.png">
+							<img src="img/welcomeItems/awp.png">
+							<img src="img/welcomeItems/awp.png">
+						</div>
+						<div class="welcome__ill-item welcome__ill-item_m4a4" data-speed="3" style="transition: 0.55s cubic-bezier(.25,.46,.45,.94)">
+							<img src="img/welcomeItems/m4a4.png">
+							<img src="img/welcomeItems/m4a4.png">
+							<img src="img/welcomeItems/m4a4.png">
+						</div>
+						<div class="welcome__ill-item welcome__ill-item_bizon" data-speed="3" style="transition: 0.55s cubic-bezier(.25,.46,.45,.94)">
+							<img src="img/welcomeItems/bizon.png">
+							<img src="img/welcomeItems/bizon.png">
+							<img src="img/welcomeItems/bizon.png">
+						</div>
+						<div class="welcome__ill-item welcome__ill-item_ak" data-speed="4" style="transition: 0.55s cubic-bezier(.25,.46,.45,.94)">
+							<img src="img/welcomeItems/ak.png">
+							<img src="img/welcomeItems/ak.png">
+							<img src="img/welcomeItems/ak.png">
+						</div>
+						<div class="welcome__ill-item welcome__ill-item_knife" data-speed="2" style="transition: 0.55s cubic-bezier(.25,.46,.45,.94)">
+							<img src="img/welcomeItems/knife.png">
+							<img src="img/welcomeItems/knife.png">
+							<img src="img/welcomeItems/knife.png">
+						</div>
+					</div>
+					<div class="welcome__side-mob">
+						<img src="img/welcome_screen_image_mob.svg">
+					</div>
+					<div class="welcome__down">
+						<span>подробнее</span>
+						<div class="welcome__down-button">
+							<img src="img/icons/arrow_down.svg">
+							<img src="img/icons/arrow_down_white.svg">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="why-we">
+				<div class="why-we__bg"><img src="img/why_we_bg.png"></div>
+				<div class="why-we__shield" data-speed="2" style="transition: 0.8s cubic-bezier(.25,.46,.45,.94)"><img src="img/shield.png"></div>
+				<div class="why-we__container _container">
+					<div class="why-we__content">
+						<div class="why-we__top">
+							<div class="why-we__subtitle subtitle">Почему трейдеры выбирают TradeOn?</div>
+							<div class="why-we__title title">Готовые и надёжные решения</div>
+						</div>
+						<div class="why-we__text">
+							<p><span>TradeOn</span> - это сервис, с помощью которого начинающий или даже самый опытный трейдер <span>сможет автоматизировать</span> различные схемы. За 2.5 года активной работы мы <span>сэкономили время</span> тысяч пользователей, <spanZ>упростив и автоматизировав их торговлю.</spanZ></p>
+							<p>Ни для кого не секрет, что в 2021 году торговля на рынках Steam <span>вручную</span> приносит куда <span>меньше</span> прибыли, <span>чем автоматизация</span> тех же процессов. Продажа предметов занимает больше времени, и нужно постоянно быть у пк, а если вы перестали работать на продолжительный срок — прибыль не генерируется. Вы работаете <span>с одного аккаунта</span> и тратите на это <span>весь день?</span> А что если тоже самое будут делать еще <span>10 ботов</span>, которых вы можете настроить под свои стратегии.</p>
+							<p>TradeOn помогает <span>ускорить трейд круги, автоматизировать различные схемы и создавать фермы пассивного заработка,</span> в которых вы видите весь процесс работы и можете его контролировать.</p>
+						</div>
+						<div class="why-we__circles circles" data-speed="3" style="transition: 0.8s cubic-bezier(.25,.46,.45,.94)"><img src="img/circles.svg"></div>
+						<div class="why-we__next next">
+							<span>Наши продукты</span>
+							<div class="next__button">
+								<img src="img/icons/arrow_down.svg">
+								<img src="img/icons/arrow_down_white.svg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- подвал сайта -->
+		<footer class="footer"></footer>
+	</div>
+	<!-- скрипты -->
+	<script src="js/scripts.min.js"></script>
+	<script src="js/home.min.js"></script>
+</body>
+</html>
