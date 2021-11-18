@@ -1561,6 +1561,8 @@ h6 {
   background: -webkit-gradient(linear, left top, right top, color-stop(-17.86%, rgba(66, 221, 255, 0)), color-stop(116.28%, rgba(80, 201, 253, 0.1)));
   background: -o-linear-gradient(left, rgba(66, 221, 255, 0) -17.86%, rgba(80, 201, 253, 0.1) 116.28%);
   background: linear-gradient(90deg, rgba(66, 221, 255, 0) -17.86%, rgba(80, 201, 253, 0.1) 116.28%);
+  -webkit-filter: blur(24px);
+          filter: blur(24px);
 }
 
 .bots-toggler__col_1 .bots-toggle.active:before {
@@ -1573,6 +1575,8 @@ h6 {
   background: -webkit-gradient(linear, left top, right top, color-stop(-14.32%, rgba(240, 105, 101, 0)), color-stop(118.92%, rgba(245, 130, 65, 0.1)));
   background: -o-linear-gradient(left, rgba(240, 105, 101, 0) -14.32%, rgba(245, 130, 65, 0.1) 118.92%);
   background: linear-gradient(90deg, rgba(240, 105, 101, 0) -14.32%, rgba(245, 130, 65, 0.1) 118.92%);
+  -webkit-filter: blur(12px);
+          filter: blur(12px);
 }
 
 .bots-toggler__col_2 .bots-toggle.active:before {
@@ -1585,6 +1589,8 @@ h6 {
   background: -webkit-gradient(linear, left top, right top, color-stop(-14.05%, rgba(94, 45, 247, 0)), color-stop(122.97%, rgba(51, 17, 147, 0.1)));
   background: -o-linear-gradient(left, rgba(94, 45, 247, 0) -14.05%, rgba(51, 17, 147, 0.1) 122.97%);
   background: linear-gradient(90deg, rgba(94, 45, 247, 0) -14.05%, rgba(51, 17, 147, 0.1) 122.97%);
+  -webkit-filter: blur(24px);
+          filter: blur(24px);
 }
 
 .bots-toggler__col_3 .bots-toggle.active:before {
@@ -1596,6 +1602,8 @@ h6 {
 .bots-toggler__col_4 .bots-toggle:before {
   background: -o-linear-gradient(0.01deg, rgba(28, 34, 31, 0) -12.42%, rgba(87, 69, 111, 0.1) 115.26%);
   background: linear-gradient(89.99deg, rgba(28, 34, 31, 0) -12.42%, rgba(87, 69, 111, 0.1) 115.26%);
+  -webkit-filter: blur(24px);
+          filter: blur(24px);
 }
 
 .bots-toggler__col_4 .bots-toggle.active:before {
@@ -1863,6 +1871,8 @@ h6 {
 
 .bots-slide__image:before {
   opacity: 0.3;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
   content: '';
   width: 110%;
   height: 110%;
