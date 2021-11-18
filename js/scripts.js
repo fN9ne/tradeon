@@ -202,6 +202,19 @@ if (animItems.length > 0) {
 	}
 	animOnScroll();
 };
+$(document).on('click', function(e) {
+	if (!e.target.closest('.select.active')) $('.select.active').removeClass('active');
+});
+$('.select__header').on('click', function() {
+	$(this).parent().toggleClass('active');
+});
+$('.select__item').on('click', function() {
+	let select = $(this).closest('.select');
+	let current = select.find('.select__current');
+	let text = $(this).text();
+	current.text(text);
+	select.removeClass('active');
+});;
 $(document).ready(function(){
 	$('.header-burger').on('click', function() {
 		$(this).toggleClass('active');
@@ -214,62 +227,26 @@ $(document).ready(function(){
 	$('.popup__area').on('click', function() {
 		$(this).closest('.popup').removeClass('active');
 	});
-	$('.header-account').on('click', function() {
+	$('.header-account, .footer__profile').on('click', function() {
 		$('.popup-account').addClass('active');
 	});
-	function parallax(parent, direction, el, mode = 0) {
-		let pos = parent.offset(),
-		elem_left = pos.left,
-		elem_top = pos.top,
-		elem_width = parent.outerWidth(),
-		elem_height = parent.outerHeight(),
-		speed = el.attr('data-speed');
-		$(window).on('scroll', function() {
-			let topPos = $(window).scrollTop() - elem_top;
-			topPos/= 2;
-			topPos/= speed;
-			console.log(topPos);
-			if (direction == 'top') {
-				if (mode == 1) {
-					el.css('transform', `translateY(${-topPos}px) rotate(8deg)`);
-				} else {
-					el.css('transform', `translateY(${-topPos}px)`);
-				}
-			}
-			if (direction == 'bottom') {
-				if (mode == 1) {
-					el.css('transform', `translateY(${topPos}px) rotate(8deg)`);
-				} else {
-					el.css('transform', `translateY(${topPos}px)`);
-				}
-			}
-			if (direction == 'left') {
-				if (mode == 1) {
-					el.css('transform', `translateX(${-topPos}px) rotate(8deg)`);
-				} else {
-					el.css('transform', `translateX(${-topPos}px)`);
-				}
-			}
-			if (direction == 'right') {
-				if (mode == 1) {
-					el.css('transform', `translateX(${topPos}px) rotate(8deg)`);
-				} else {
-					el.css('transform', `translateX(${topPos}px)`);
-				}
-			}
-		});
-	}
-	setTimeout(() => {
-		parallax($('.welcome'), 'top', $('.welcome__circles_1'));
-		parallax($('.welcome'), 'top', $('.welcome__circles_2'));
-		parallax($('.welcome'), 'top', $('.welcome__circles_3'));
-		parallax($('.welcome'), 'top', $('.welcome__circles_4'));
-		parallax($('.welcome'), 'left', $('.welcome__ill-item_awp'), 1);
-		parallax($('.welcome'), 'left', $('.welcome__ill-item_m4a4'), 1);
-		parallax($('.welcome'), 'left', $('.welcome__ill-item_bizon'), 1);
-		parallax($('.welcome'), 'left', $('.welcome__ill-item_knife'), 1);
-		parallax($('.welcome'), 'left', $('.welcome__ill-item_ak'), 1);
-		parallax($('.why-we'), 'left', $('.why-we__shield'));
-		parallax($('.why-we'), 'bottom', $('.why-we__circles'));
-	}, 100);
+	$('.header-nav__link').on('click', function() {
+		$('.header-burger').removeClass('active');
+		$('.burger-content').removeClass('active');
+	});
+	$('.select__item').on('click', function() {
+		let parent = $(this).closest('.select');
+		if (!parent.hasClass('choosed')) {
+			parent.addClass('choosed');
+		}
+	});
+	$('.spoiler').on('click', function() {
+		$(this).toggleClass('active');
+	});
+	$(document).on('click', 'a[href^="#"]', function(e) {
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: $($.attr(this, 'href')).offset().top,
+		}, 1000);
+	});
 });

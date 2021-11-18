@@ -21,6 +21,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<!-- swiper slider js -->
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 </head>
 <body>
 	<!-- оборолчка страницы -->
@@ -28,16 +31,16 @@
 		<!-- шапка сайта -->
 		<header class="header">
 	<div class="header__container _container">
-		<a href="#" class="header__logo _anim-items"><img src="img/logo.png"></a>
+		<a href="/" class="header__logo _anim-items"><img src="img/logo.png"></a>
 		<nav class="header-nav" data-da="burger-content__body, 1, 1050">
 			<ul class="header-nav__list">
-				<li class="header-nav__item _anim-items _anim-fadeInTop" style="transition-delay: 0.2s;"><a class="header-nav__link" href="#">Главная</a></li>
-				<li class="header-nav__item _anim-items _anim-fadeInTop" style="transition-delay: 0.25s;"><a class="header-nav__link" href="#">О нас</a></li>
-				<li class="header-nav__item _anim-items _anim-fadeInTop" style="transition-delay: 0.3s;"><a class="header-nav__link" href="#">Наши продукты</a></li>
-				<li class="header-nav__item _anim-items _anim-fadeInTop" style="transition-delay: 0.35s;"><a class="header-nav__link" href="#">Как подключить</a></li>
-				<li class="header-nav__item _anim-items _anim-fadeInTop" style="transition-delay: 0.4s;"><a class="header-nav__link" href="#">Планы подписок</a></li>
-				<li class="header-nav__item _anim-items _anim-fadeInTop" style="transition-delay: 0.45s;"><a class="header-nav__link header-nav__link_mob-hide" href="#">Мульти-торговля и кэшбэк</a></li>
-				<li class="header-nav__item _anim-items _anim-fadeInTop" style="transition-delay: 0.5s;"><a class="header-nav__link header-nav__link_mob-show" href="#">Мульти-торговля</a></li>
+				<li class="header-nav__item _anim-items _anim-fadeInTop" style="transition-delay: 0.2s;"><a class="header-nav__link" href="#home">Главная</a></li>
+				<li class="header-nav__item _anim-items _anim-fadeInTop" style="transition-delay: 0.25s;"><a class="header-nav__link" href="#why-we">О нас</a></li>
+				<li class="header-nav__item _anim-items _anim-fadeInTop" style="transition-delay: 0.3s;"><a class="header-nav__link" href="#bots">Наши продукты</a></li>
+				<li class="header-nav__item _anim-items _anim-fadeInTop" style="transition-delay: 0.35s;"><a class="header-nav__link" href="#instruction">Как подключить</a></li>
+				<li class="header-nav__item _anim-items _anim-fadeInTop" style="transition-delay: 0.4s;"><a class="header-nav__link" href="#plans">Планы подписок</a></li>
+				<li class="header-nav__item _anim-items _anim-fadeInTop" style="transition-delay: 0.45s;"><a class="header-nav__link header-nav__link_mob-hide" href="#cashback">Мульти-торговля и кэшбэк</a></li>
+				<li class="header-nav__item _anim-items _anim-fadeInTop" style="transition-delay: 0.5s;"><a class="header-nav__link header-nav__link_mob-show" href="#cashback">Мульти-торговля</a></li>
 			</ul>
 		</nav>
 		<div class="header-account _anim-items _anim-fadeInTop" style="transition-delay: 0.6s;" data-da="burger-content__body, 2, 1050">
@@ -86,7 +89,7 @@
 </div>
 		<!-- контент страницы -->
 		<main class="page">
-			<section class="welcome">
+			<section class="welcome" id="home">
 				<div class="welcome__abstract-lines _anim-items" style="transition-delay: 0.2s;"><img src="img/abstarcat-lines.png"></div>
 				<div class="welcome__container _container">
 					<div class="welcome__company-row _anim-items _anim-fadeInRight" style="transition-delay: 0.3s;"><span>tradeon</span><span>tradeon</span><span>tradeon</span><span>tradeon</span><span>tradeon</span><span>tradeon</span><span>tradeon</span></div>
@@ -94,7 +97,7 @@
 						<div class="welcome__circles welcome__circles_1 circles _anim-items" data-speed="1" style="transition: 0.55s cubic-bezier(.25,.46,.45,.94) 0.2s"><img src="img/circles.svg"></div>
 						<div class="welcome__circles welcome__circles_2 circles _anim-items" data-speed="2" style="transition: 0.55s cubic-bezier(.25,.46,.45,.94) 0.2s"><img src="img/circles.svg"></div>
 						<div class="welcome__title _anim-items _anim-fadeInBottom">Ваш инструмент <br>для автоматического заработка <br>на внутриигровых предметах</div>
-						<a href="#" class="welcome__button button _anim-items _anim-fadeInBottom"><span>подробнее</span></a>
+						<a href="#why-we" class="welcome__button button _anim-items _anim-fadeInBottom"><span>подробнее</span></a>
 						<ul class="welcome-socials">
 							<li class="welcome-socials__item _anim-items _anim-fadeInBottom" style="transition-delay: 0.2s;"><a href="#" class="welcome-socials__link"><img src="img/socials/vk.svg"></a></li>
 							<li class="welcome-socials__item _anim-items _anim-fadeInBottom" style="transition-delay: 0.3s;"><a href="#" class="welcome-socials__link"><img src="img/socials/telegram.svg"></a></li>
@@ -136,16 +139,17 @@
 					<div class="welcome__side-mob">
 						<img src="img/welcome_screen_image_mob.svg">
 					</div>
-					<div class="welcome__down _anim-items _anim-fadeInBottom">
+					<a href="#why-we" class="welcome__down _anim-items _anim-fadeInBottom">
 						<span>подробнее</span>
 						<div class="welcome__down-button">
 							<img src="img/icons/arrow_down.svg">
 							<img src="img/icons/arrow_down_white.svg">
 						</div>
-					</div>
+					</a>
 				</div>
 			</section>
-			<section class="why-we">
+			<section class="why-we" id="why-we">
+				<div class="why-we__bg-mob"><img src="img/why_we_bg_mob.svg"></div>
 				<div class="why-we__bg _anim-items" style="transition-delay: 0.4s;"><img src="img/why_we_bg.png"></div>
 				<div class="why-we__shield _anim-items" data-speed="2" style="transition: 0.55s cubic-bezier(.25,.46,.45,.94)"><img src="img/shield.png"></div>
 				<div class="why-we__container _container">
@@ -159,9 +163,610 @@
 							<p>Ни для кого не секрет, что в 2021 году торговля на рынках Steam <span>вручную</span> приносит куда <span>меньше</span> прибыли, <span>чем автоматизация</span> тех же процессов. Продажа предметов занимает больше времени, и нужно постоянно быть у пк, а если вы перестали работать на продолжительный срок — прибыль не генерируется. Вы работаете <span>с одного аккаунта</span> и тратите на это <span>весь день?</span> А что если тоже самое будут делать еще <span>10 ботов</span>, которых вы можете настроить под свои стратегии.</p>
 							<p>TradeOn помогает <span>ускорить трейд круги, автоматизировать различные схемы и создавать фермы пассивного заработка,</span> в которых вы видите весь процесс работы и можете его контролировать.</p>
 						</div>
-						<div class="why-we__circles circles _anim-items" data-speed="3" style="transition: 0.55s cubic-bezier(.25,.46,.45,.94)"><img src="img/circles.svg"></div>
-						<div class="why-we__next next _anim-items _anim-fadeInBottom" style="transition-delay: 0.1s;">
+						<div class="why-we__circles circles _anim-items" data-speed="10" style="transition: 0.55s cubic-bezier(.25,.46,.45,.94)"><img src="img/circles.svg"></div>
+						<a href="#bots" class="why-we__next next _anim-items _anim-fadeInBottom" style="transition-delay: 0.1s;">
 							<span>Наши продукты</span>
+							<div class="next__button">
+								<img src="img/icons/arrow_down.svg">
+								<img src="img/icons/arrow_down_white.svg">
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="bots" id="bots">
+				<div class="bots__top">
+					<div class="bots__container _container">
+						<div class="bots-toggler">
+							<div class="bots-toggler__content">
+								<div class="bots-toggler__col bots-toggler__col_1">
+									<div class="bots-toggle active _anim-items _anim-fadeInTop">
+										<div class="bots-toggle__icon"><img src="img/bots/seller.png"></div>
+										<div class="bots-toggle__box">
+											<div class="bots-toggle__title">TradeOnTM Seller</div>
+											<div class="bots-toggle__text">Бот автоматически анализирует цену продажи, конкурирует и передает проданные предметы market.csgo.com</div>
+										</div>
+									</div>
+								</div>
+								<div class="bots-toggler__col bots-toggler__col_2">
+									<div class="bots-toggle _anim-items _anim-fadeInTop">
+										<div class="bots-toggle__icon"><img src="img/bots/pro.png"></div>
+										<div class="bots-toggle__box">
+											<div class="bots-toggle__title">TradeOnTM Pro</div>
+											<div class="bots-toggle__text">Этот бот автоматически анализирует, закупает и продает купленные предметы на market.csgo.com</div>
+										</div>
+									</div>
+								</div>
+								<div class="bots-toggler__col bots-toggler__col_3">
+									<div class="bots-toggle _anim-items _anim-fadeInTop">
+										<div class="bots-toggle__icon"><img src="img/bots/steam_pro.png"></div>
+										<div class="bots-toggle__box">
+											<div class="bots-toggle__title">TradeOnSteam Pro</div>
+											<div class="bots-toggle__text">Steam bot автоматически анализирует, закупает и продает купленные предметы на торговой площадке Steam</div>
+										</div>
+									</div>
+								</div>
+								<div class="bots-toggler__col bots-toggler__col_4">
+									<div class="bots-toggle _anim-items _anim-fadeInTop">
+										<div class="bots-toggle__icon"><img src="img/bots/steam_cashout.png"></div>
+										<div class="bots-toggle__box">
+											<div class="bots-toggle__title">TRADEONSTEAM CASHOUT</div>
+											<div class="bots-toggle__text">Автоматически закупает на тп Steam выгодные предметы под вывод в реальные деньги, чтобы продать их на market.csgo.com</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bots__main">
+					<div class="bots__slider swiper-container">
+						<div class="bots__arrow bots__arrow-prev _anim-items _anim-fadeInLeft"></div>
+						<div class="swiper-wrapper">
+							<div class="bots-slide bots-slide_1 swiper-slide">
+								<div class="bots-slide__container _container">
+									<div class="bots-slide__image _anim-items" ><img src="img/seller_image.png"><div class="bots-slide__line"></div></div>
+									<div class="bots-slide__content">
+										<div class="bots-slide__title _anim-items _anim-fadeInBottom">Бот Tm Seller</div>
+										<div class="bots-slide__text _anim-items _anim-fadeInBottom"><span>TradeOnTm Seller</span> — это главный помощник для <span>выгодной и быстрой продажи</span> на market.csgo.com. С помощью облачной аналитики мы рассчитываем <span>гарантированную</span> цену продажи, и вы можете выставить все свои предметы разом, отталкиваясь от этой цены. Бот <span>без остановки</span> конкурирует на рынке и <span>автоматически</span> передает предметы, которые у вас покупают. Вы можете продавать сразу <span>с нескольких аккаунтов</span>, не боясь, что боты будут конкурировать между собой!</div>
+										<div class="bots-slide__buttons">
+											<a href="#plans" class="bots-slide__button button"><span>Планы подписки</span></a>
+											<a href="#plans" class="bots-slide__button button button--bordered">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="bots-slide bots-slide_2 swiper-slide">
+								<div class="bots-slide__container _container">
+									<div class="bots-slide__image"><img src="img/pro_image.png"><div class="bots-slide__line"></div></div>
+									<div class="bots-slide__content">
+										<div class="bots-slide__title">Бот Tm Pro</div>
+										<div class="bots-slide__text"><span>TradeOnTm Pro</span> — полностью автоматизирует задачи, <span>приносящие прибыль.</span> Он сам создает список вещей на покупку, сам покупает самые выгодные предметы, которые невозможно "поймать" вручную, а в завершение <span>сам продаёт</span> купленные вещи с желаемой прибылью на market.csgo.com. Торгуйте одновременно с нескольких аккаунтов через одного бота, задайте настройки так, чтобы боты не пересекались между собой и <span>получайте максимальную прибыль!</span></div>
+										<div class="bots-slide__buttons">
+											<a href="#plans" class="bots-slide__button button _anim-items _anim-fadeInBottom"><span>Планы подписки</span></a>
+											<a href="#plans" class="bots-slide__button button button--bordered _anim-items _anim-fadeInBottom">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="bots-slide bots-slide_3 swiper-slide">
+								<div class="bots-slide__container _container">
+									<div class="bots-slide__image"><img src="img/steam_pro_image.png"><div class="bots-slide__line"></div></div>
+									<div class="bots-slide__content">
+										<div class="bots-slide__title">Бот Steam Pro</div>
+										<div class="bots-slide__text"><span>TradeOnSteam Pro — акула торговли</span> на рынке Steam. Бот проверит все предметы с торговой площадки, найдет <span>выгодные</span>, рассчитает как скоро сработает отложенный ордер и <span>самостоятельно</span> выставит ордер на покупку. Как только выгодный предмет купится — бот оценит его  и выставит на продажу <span>с желаемой прибылью</span>. Конечно же, он не забудет проверить стикеры на предметах и добавить наценку, если найдет что-то дорогое.</div>
+										<div class="bots-slide__buttons">
+											<a href="#plans" class="bots-slide__button button"><span>Планы подписки</span></a>
+											<a href="#plans" class="bots-slide__button button button--bordered">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="bots-slide bots-slide_4 swiper-slide">
+								<div class="bots-slide__container _container">
+									<div class="bots-slide__image"><img src="img/steam_cashout_image.png"><div class="bots-slide__line"></div></div>
+									<div class="bots-slide__content">
+										<div class="bots-slide__title">Бот Steam Cashout</div>
+										<div class="bots-slide__text"><span>TradeOnSteam Cashout</span> — забудьте о невыгодном выводе со steam под -40%, ведь появился Steam Cashout, который <span>автоматически</span> закупится на ваш Steam баланс <span>выгодными предметами</span>, чтобы в дальнейшем продать их на market.csgo.com. А может вы трейдер, и хотите выводить со Steam для своей схемы? <span>Удобные настройки</span> помогут задать желаемый процент вывода, популярность вещей, желаемые стикеры — и все необходимое, чтобы ваш вывод со Steam был <span>максимально выгодным!</span></div>
+										<div class="bots-slide__buttons">
+											<a href="#plans" class="bots-slide__button button"><span>Планы подписки</span></a>
+											<a href="#plans" class="bots-slide__button button button--bordered">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bots__arrow bots__arrow-next"></div>
+					</div>
+				</div>
+			</section>
+			<section class="instruction" id="instruction">
+				<div class="instruction__bg _anim-items">
+					<img src="img/lines.png">
+				</div>
+				<div class="instruction__container _container">
+					<div class="instruction__box"></div>
+					<div class="instruction__slider _anim-items">
+						<div class="instruction-slide">
+							<iframe src="https://www.youtube.com/embed/89WXOMmtr24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="instruction-slide">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/JRA2JpqAjlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="instruction-slide">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/oaEhwwYjIds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="instruction__content">
+						<div class="instruction__subtitle subtitle _anim-items _anim-fadeInBottom" data-da="instruction__box, 0, 992">Дополнительные возможности пользователей TradeOn</div>
+						<div class="instruction__title title _anim-items _anim-fadeInBottom" data-da="instruction__box, 1, 992">ПОДРОБНЫЕ ИНСТРУЦИИ, <br>С КОТОРЫМИ ЛЕГКО РАЗОБРАТЬСЯ</div>
+						<div class="instruction__text _anim-items _anim-fadeInBottom">
+							<p><span>В TradeOn</span> вы можете забыть об ожидании администраторов, которые включат программу и всё объяснят - у нас все происходит <span>автоматически!</span></p>
+							<p>С помощью текстовых и видео-гайдов каждый пользователь может <span>самостоятельно</span> активировать свою подписку, настроить бота, а также разобраться во всех его функциях. Но если у вас все-таки появятся вопросы – на них вам с радостью ответят <span>агенты поддержки.</span></p>
+						</div>
+						<div class="instruction__circles circles _anim-items" data-speed="10"><img src="img/circles.svg"></div>
+					</div>
+				</div>
+			</section>
+			<section class="support" id="support">
+				<div class="support__container _container">
+					<div class="support__company-row _anim-items"><span>tradeon</span><span>tradeon</span><span>tradeon</span><span>tradeon</span><span>tradeon</span></div>
+					<div class="support__content">
+						<div class="support__subtitle subtitle _anim-items _anim-fadeInBottom">Дополнительные возможности пользователей TradeOn</div>
+						<div class="support__title title _anim-items _anim-fadeInBottom" style="transition-delay: 0.6s;">ПОСТОЯННАЯ ПОДДЕРЖКА И КОММУНИКАЦИЯ <br>С ДРУГИМИ ПОЛЬЗОВАТЕЛЯМИ</div>
+						<div class="support__text _anim-items _anim-fadeInBottom" style="transition-delay: 0.7s;">
+							<p>Появилась какая-то проблема и не получилось найти <span>решение?</span> Напишите нашим <span>агентам поддержки</span> и они <span>помогут</span> разобраться, чтобы в дальнейшем подобной проблемы у вас уже не возникало.</p>
+							<p>Помимо этого, <span>в TradeOn есть конференции пользователей</span>, в которых вы также сможете найти ответ на свой вопрос от более опытных участников нашего дружного комьюнити.</p>
+						</div>
+						<div class="support__circles circles" data-speed="8" style="transition: 0.6s ease-out 0.1s;"><img src="img/circles.svg"></div>
+					</div>
+					<div class="support__ill _anim-items _anim-fadeInBottom" style="transition-delay: 0.8s;">
+						<img src="img/support_img.png">
+						<div class="support__ill_mob">
+							<img src="img/support_img_mob.png">
+						</div>
+						<div class="support__lines"><img src="img/lines_2.png"></div>
+					</div>
+				</div>
+			</section>
+			<section class="faq" id="faq">
+				<div class="faq__container _container">
+					<div class="faq__ill _anim-items _anim-fadeInBottom" style="transition-delay: 0.2s;">
+						<img src="img/faq_img.svg">
+						<a href="#plans" class="faq__next next" data-da="faq__content, last, 992">
+							<span>планы подписок</span>
+							<div class="next__button">
+								<img src="img/icons/arrow_down.svg">
+								<img src="img/icons/arrow_down_white.svg">
+							</div>
+						</a>
+					</div>
+					<div class="faq__ill_mob"><img src="img/faq_img_mob.png"></div>
+					<div class="faq__content">
+						<div class="faq__subtitle subtitle _anim-items _anim-fadeInBottom">Дополнительные возможности пользователей TradeOn</div>
+						<div class="faq__title title _anim-items _anim-fadeInBottom" style="transition-delay: 0.6s;">РАБОТАЕМ ДЛЯ ВАС</div>
+						<div class="faq__text _anim-items _anim-fadeInBottom" style="transition-delay: 0.7s;">Наша задача — <span>упростить, ускорить и улучшить</span> вашу торговлю.</div>
+						<div class="faq__issue-container">
+							<div class="faq__circles circles" data-speed="3" style="transition: 0.8s ease-out 0.05s"><img src="img/circles.svg"></div>
+							<div class="faq-issue _anim-items _anim-fadeInBottom" style="transition-delay: 0.5s;">
+								<div class="faq-issue__text">Не знаете как лучше распределить баланс и какую подписку выбрать?</div>
+								<div class="faq-issue__answer">Постараемся подсказать лучшую стратегию для оптимальной работы!</div>
+							</div>
+							<div class="faq-issue _anim-items _anim-fadeInBottom" style="transition-delay: 0.6s;">
+								<div class="faq-issue__text">Бот не работал по нашей вине, например, из-за технических работ?</div>
+								<div class="faq-issue__answer">Мы восстановим время подписки с бонусом!</div>
+							</div>
+							<div class="faq-issue _anim-items _anim-fadeInBottom" style="transition-delay: 0.7s;">
+								<div class="faq-issue__text">В боте не хватает какой-то действительно полезной функции?</div>
+								<div class="faq-issue__answer">Напишите нам об этом и увидите эту функцию уже в ближайших обновлениях!</div>
+							</div>
+						</div>
+						<div class="faq__text _anim-items _anim-fadeInBottom" style="transition-delay: 0.8s;">Станьте пользователем <span>TradeOn</span> и убедитесь в этом сами!</div>
+					</div>
+				</div>
+			</section>
+			<section class="plans" id="plans">
+				<div class="plans__bg plans__bg_1 _anim-items _anim-fadeInBottom"><img src="img/plans_lines.png"></div>
+				<div class="plans__bg plans__bg_2 _anim-items _anim-fadeInBottom"><img src="img/plans_lines_2.png"></div>
+				<div class="plans__container _container">
+					<div class="plans__top">
+						<div class="plans__title title _anim-items _anim-fadeInBottom" style="transition-delay: 0.6s;">планы подписок</div>
+						<div class="plans-steps">
+							<div class="plans-steps__item _anim-items _anim-fadeInBottom" style="transition-delay: 0.8s;">
+								<div class="plans-steps__icon"><img src="img/icons/choose_plan.png"></div>
+								<div class="plans-steps__name active">Выбери подходящий план</div>
+							</div>
+							<div class="plans-steps__line _anim-items" style="transition-delay: 1.4s;">
+								<span class="active"></span>
+								<span class="active"></span>
+								<span class="active"></span>
+								<span class="active"></span>
+								<span class="active"></span>
+								<span class="active"></span>
+								<span class="active"></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="plans-steps__item _anim-items _anim-fadeInBottom" style="transition-delay: 0.9s;">
+								<div class="plans-steps__icon"><img src="img/icons/start_bot.svg"></div>
+								<div class="plans-steps__name">Запусти бота в личном кабинете</div>
+							</div>
+							<div class="plans-steps__line _anim-items" style="transition-delay: 1.5s;">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="plans-steps__item _anim-items _anim-fadeInBottom" style="transition-delay: 1s;">
+								<div class="plans-steps__icon"><img src="img/icons/profit.svg"></div>
+								<div class="plans-steps__name">Получи первый Профит</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="plans__content">
+					<div class="plans__container _container">
+						<div class="plans__main">
+							<div class="plans__col _anim-items _anim-fadeInBottom" data-bot="1" style="transition-delay: 0.5s;">
+								<div class="plan plan_1">
+									<div class="plan__icon"><img src="img/bots/seller.png"></div>
+									<div class="plan__box">
+										<div class="plan__name">TradeOnTm Seller</div>
+										<div class="plan__price">от  <span>499руб</span></div>
+									</div>
+									<div class="plan__button button"><span>Выбрать План</span></div>
+								</div>
+							</div>
+							<div class="plans__col _anim-items _anim-fadeInBottom" data-bot="2" style="transition-delay: 0.6s;">
+								<div class="plan plan_2">
+									<div class="plan__icon"><img src="img/bots/pro.png"></div>
+									<div class="plan__box">
+										<div class="plan__name">TradeOnTm Pro</div>
+										<div class="plan__price">от  <span>699руб</span></div>
+									</div>
+									<div class="plan__button button"><span>Выбрать План</span></div>
+								</div>
+							</div>
+							<div class="plans__col _anim-items _anim-fadeInBottom" data-bot="3" style="transition-delay: 0.75s;">
+								<div class="plan plan_3">
+									<div class="plan__icon"><img src="img/bots/steam_pro.png"></div>
+									<div class="plan__box">
+										<div class="plan__name">TradeOnSteam Pro</div>
+										<div class="plan__price">от  <span>899руб</span></div>
+									</div>
+									<div class="plan__button button"><span>Выбрать План</span></div>
+								</div>
+							</div>
+							<div class="plans__col _anim-items _anim-fadeInBottom" data-bot="4" style="transition-delay: 0.8s;">
+								<div class="plan plan_4">
+									<div class="plan__icon"><img src="img/bots/steam_cashout.png"></div>
+									<div class="plan__box">
+										<div class="plan__name">TradeOnsteam Cashout</div>
+										<div class="plan__price">от  <span>1299руб</span></div>
+									</div>
+									<div class="plan__button button"><span>Выбрать План</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="plans__choosed plans__choosed_1" data-bot="1">
+					<div class="plans__container plans__container-choosed _container">
+						<div class="plans__choosed-content">
+							<div class="plans__choosed-col plans__choosed-col_main">
+								<div class="plan-choosed">
+									<div class="plan-choosed__icon"><img src="img/bots/seller.png"></div>
+									<div class="plan-choosed__subname">Планы подписки для</div>
+									<div class="plan-choosed__name">TradeOnTm Seller</div>
+									<div class="plan-choosed__button button"><span>Другой бот</span></div>
+								</div>
+							</div>
+							<div class="plans__choosed-col plans__choosed-col_price">
+								<div class="plan-choosed">
+									<div class="plan-choosed__days">15 дней</div>
+									<div class="plan-choosed__price">32 руб/день</div>
+									<div class="plan-choosed__lvl">
+										<form action="#" method="post">
+											<span>Уровень подписки:</span>
+											<div class="plan-choosed__lvl-minus">-</div>
+											<input type="text" value="1">
+											<div class="plan-choosed__lvl-plus">+</div>
+										</form>
+									</div>
+									<div class="plan-choosed__total-price"><div><span>499</span> руб</div></div>
+									<div class="plan-choosed__button button"><span>Приобрести</span></div>
+								</div>
+							</div>
+							<div class="plans__choosed-col plans__choosed-col_price">
+								<div class="plan-choosed">
+									<div class="plan-choosed__days">30 дней</div>
+									<div class="plan-choosed__sale">экономия 20 %</div>
+									<div class="plan-choosed__price">27 руб/день</div>
+									<div class="plan-choosed__lvl">
+										<form action="#" method="post">
+											<span>Уровень подписки:</span>
+											<div class="plan-choosed__lvl-minus">-</div>
+											<input type="text" value="1">
+											<div class="plan-choosed__lvl-plus">+</div>
+										</form>
+									</div>
+									<div class="plan-choosed__total-price"><div><span>799</span> руб</div><div>999 РУБ</div></div>
+									<div class="plan-choosed__button button"><span>Приобрести</span></div>
+								</div>
+							</div>
+							<div class="plans__choosed-col plans__choosed-col_price plans__choosed-col_recomended">
+								<div class="plan-choosed">
+									<div class="plan-choosed__days">90 дней</div>
+									<div class="plan-choosed__sale">экономия 46 %</div>
+									<div class="plan-choosed__price">23 руб/день</div>
+									<div class="plan-choosed__lvl">
+										<form action="#" method="post">
+											<span>Уровень подписки:</span>
+											<div class="plan-choosed__lvl-minus">-</div>
+											<input type="text" value="1">
+											<div class="plan-choosed__lvl-plus">+</div>
+										</form>
+									</div>
+									<div class="plan-choosed__total-price"><div><span>2399</span> руб</div><div>2999 руб</div></div>
+									<div class="plan-choosed__button button"><span>Приобрести</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="plans__choosed plans__choosed_2" data-bot="2">
+					<div class="plans__container plans__container-choosed _container">
+						<div class="plans__choosed-content">
+							<div class="plans__choosed-col plans__choosed-col_main">
+								<div class="plan-choosed">
+									<div class="plan-choosed__icon"><img src="img/bots/pro.png"></div>
+									<div class="plan-choosed__subname">Планы подписки для</div>
+									<div class="plan-choosed__name">TradeOnTm Pro</div>
+									<div class="plan-choosed__button button"><span>Другой бот</span></div>
+								</div>
+							</div>
+							<div class="plans__choosed-col plans__choosed-col_price">
+								<div class="plan-choosed">
+									<div class="plan-choosed__days">15 дней</div>
+									<div class="plan-choosed__price">32 руб/день</div>
+									<div class="plan-choosed__lvl">
+										<form action="#" method="post">
+											<span>Уровень подписки:</span>
+											<div class="plan-choosed__lvl-minus">-</div>
+											<input type="text" value="1">
+											<div class="plan-choosed__lvl-plus">+</div>
+										</form>
+									</div>
+									<div class="plan-choosed__total-price"><div><span>499</span> руб</div></div>
+									<div class="plan-choosed__button button"><span>Приобрести</span></div>
+								</div>
+							</div>
+							<div class="plans__choosed-col plans__choosed-col_price">
+								<div class="plan-choosed">
+									<div class="plan-choosed__days">30 дней</div>
+									<div class="plan-choosed__sale">экономия 20 %</div>
+									<div class="plan-choosed__price">27 руб/день</div>
+									<div class="plan-choosed__lvl">
+										<form action="#" method="post">
+											<span>Уровень подписки:</span>
+											<div class="plan-choosed__lvl-minus">-</div>
+											<input type="text" value="1">
+											<div class="plan-choosed__lvl-plus">+</div>
+										</form>
+									</div>
+									<div class="plan-choosed__total-price"><div><span>799</span> руб</div><div>999 РУБ</div></div>
+									<div class="plan-choosed__button button"><span>Приобрести</span></div>
+								</div>
+							</div>
+							<div class="plans__choosed-col plans__choosed-col_price plans__choosed-col_recomended">
+								<div class="plan-choosed">
+									<div class="plan-choosed__days">90 дней</div>
+									<div class="plan-choosed__sale">экономия 46 %</div>
+									<div class="plan-choosed__price">23 руб/день</div>
+									<div class="plan-choosed__lvl">
+										<form action="#" method="post">
+											<span>Уровень подписки:</span>
+											<div class="plan-choosed__lvl-minus">-</div>
+											<input type="text" value="1">
+											<div class="plan-choosed__lvl-plus">+</div>
+										</form>
+									</div>
+									<div class="plan-choosed__total-price"><div><span>2399</span> руб</div><div>2999 руб</div></div>
+									<div class="plan-choosed__button button"><span>Приобрести</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="plans__choosed plans__choosed_3" data-bot="3">
+					<div class="plans__container plans__container-choosed _container">
+						<div class="plans__choosed-content">
+							<div class="plans__choosed-col plans__choosed-col_main">
+								<div class="plan-choosed">
+									<div class="plan-choosed__icon"><img src="img/bots/steam_pro.png"></div>
+									<div class="plan-choosed__subname">Планы подписки для</div>
+									<div class="plan-choosed__name">TradeOnSteam Pro</div>
+									<div class="plan-choosed__button button"><span>Другой бот</span></div>
+								</div>
+							</div>
+							<div class="plans__choosed-col plans__choosed-col_price">
+								<div class="plan-choosed">
+									<div class="plan-choosed__days">15 дней</div>
+									<div class="plan-choosed__price">32 руб/день</div>
+									<div class="plan-choosed__lvl">
+										<form action="#" method="post">
+											<span>Уровень подписки:</span>
+											<div class="plan-choosed__lvl-minus">-</div>
+											<input type="text" value="1">
+											<div class="plan-choosed__lvl-plus">+</div>
+										</form>
+									</div>
+									<div class="plan-choosed__total-price"><div><span>499</span> руб</div></div>
+									<div class="plan-choosed__button button"><span>Приобрести</span></div>
+								</div>
+							</div>
+							<div class="plans__choosed-col plans__choosed-col_price">
+								<div class="plan-choosed">
+									<div class="plan-choosed__days">30 дней</div>
+									<div class="plan-choosed__sale">экономия 20 %</div>
+									<div class="plan-choosed__price">27 руб/день</div>
+									<div class="plan-choosed__lvl">
+										<form action="#" method="post">
+											<span>Уровень подписки:</span>
+											<div class="plan-choosed__lvl-minus">-</div>
+											<input type="text" value="1">
+											<div class="plan-choosed__lvl-plus">+</div>
+										</form>
+									</div>
+									<div class="plan-choosed__total-price"><div><span>799</span> руб</div><div>999 РУБ</div></div>
+									<div class="plan-choosed__button button"><span>Приобрести</span></div>
+								</div>
+							</div>
+							<div class="plans__choosed-col plans__choosed-col_price plans__choosed-col_recomended">
+								<div class="plan-choosed">
+									<div class="plan-choosed__days">90 дней</div>
+									<div class="plan-choosed__sale">экономия 46 %</div>
+									<div class="plan-choosed__price">23 руб/день</div>
+									<div class="plan-choosed__lvl">
+										<form action="#" method="post">
+											<span>Уровень подписки:</span>
+											<div class="plan-choosed__lvl-minus">-</div>
+											<input type="text" value="1">
+											<div class="plan-choosed__lvl-plus">+</div>
+										</form>
+									</div>
+									<div class="plan-choosed__total-price"><div><span>2399</span> руб</div><div>2999 руб</div></div>
+									<div class="plan-choosed__button button"><span>Приобрести</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="plans__choosed plans__choosed_4" data-bot="4">
+					<div class="plans__container plans__container-choosed _container">
+						<div class="plans__choosed-content">
+							<div class="plans__choosed-col plans__choosed-col_main">
+								<div class="plan-choosed">
+									<div class="plan-choosed__icon"><img src="img/bots/steam_cashout.png"></div>
+									<div class="plan-choosed__subname">Планы подписки для</div>
+									<div class="plan-choosed__name">TradeOnsteam cashout</div>
+									<div class="plan-choosed__button button"><span>Другой бот</span></div>
+								</div>
+							</div>
+							<div class="plans__choosed-col plans__choosed-col_price">
+								<div class="plan-choosed">
+									<div class="plan-choosed__days">15 дней</div>
+									<div class="plan-choosed__price">32 руб/день</div>
+									<div class="plan-choosed__lvl">
+										<form action="#" method="post">
+											<span>Уровень подписки:</span>
+											<div class="plan-choosed__lvl-minus">-</div>
+											<input type="text" value="1">
+											<div class="plan-choosed__lvl-plus">+</div>
+										</form>
+									</div>
+									<div class="plan-choosed__total-price"><div><span>499</span> руб</div></div>
+									<div class="plan-choosed__button button"><span>Приобрести</span></div>
+								</div>
+							</div>
+							<div class="plans__choosed-col plans__choosed-col_price">
+								<div class="plan-choosed">
+									<div class="plan-choosed__days">30 дней</div>
+									<div class="plan-choosed__sale">экономия 20 %</div>
+									<div class="plan-choosed__price">27 руб/день</div>
+									<div class="plan-choosed__lvl">
+										<form action="#" method="post">
+											<span>Уровень подписки:</span>
+											<div class="plan-choosed__lvl-minus">-</div>
+											<input type="text" value="1">
+											<div class="plan-choosed__lvl-plus">+</div>
+										</form>
+									</div>
+									<div class="plan-choosed__total-price"><div><span>799</span> руб</div><div>999 РУБ</div></div>
+									<div class="plan-choosed__button button"><span>Приобрести</span></div>
+								</div>
+							</div>
+							<div class="plans__choosed-col plans__choosed-col_price plans__choosed-col_recomended">
+								<div class="plan-choosed">
+									<div class="plan-choosed__days">90 дней</div>
+									<div class="plan-choosed__sale">экономия 46 %</div>
+									<div class="plan-choosed__price">23 руб/день</div>
+									<div class="plan-choosed__lvl">
+										<form action="#" method="post">
+											<span>Уровень подписки:</span>
+											<div class="plan-choosed__lvl-minus">-</div>
+											<input type="text" value="1">
+											<div class="plan-choosed__lvl-plus">+</div>
+										</form>
+									</div>
+									<div class="plan-choosed__total-price"><div><span>2399</span> руб</div><div>2999 руб</div></div>
+									<div class="plan-choosed__button button"><span>Приобрести</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#reviews" class="plans__next next _anim-items _anim-fadeInBottom" style="transition-delay: 0.7s;">
+					<span>отзывы</span>
+					<div class="next__button">
+						<img src="img/icons/arrow_down.svg">
+						<img src="img/icons/arrow_down_white.svg">
+					</div>
+				</a>
+			</section>
+			<section class="reviews" id="reviews">
+				<div class="reviews__container _container">
+					<div class="reviews__title title _anim-items _anim-fadeInBottom">отзывы</div>
+					<div class="reviews__content">
+						<div class="reviews__circles reviews__circles_1 circles" data-speed="2" style="transition: .8s ease-out 0.05s;"><img src="img/circles.svg"></div>
+						<div class="reviews__circles reviews__circles_2 circles" data-speed="5" style="transition: .8s ease-out 0.05s;"><img src="img/circles.svg"></div>
+						<div class="reviews__slider">
+							<div class="review review_green _anim-items _anim-fadeInBottom" style="transition-delay: 0.6s;">
+								<div class="review__content">
+									<div class="review__img"></div>
+									<div class="review__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+									<div class="review__name">Всеволод Петренко</div>
+								</div>
+							</div>
+							<div class="review review_orange _anim-items _anim-fadeInBottom" style="transition-delay: 0.8s;">
+								<div class="review__content">
+									<div class="review__img"></div>
+									<div class="review__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+									<div class="review__name">Всеволод Петренко</div>
+								</div>
+							</div>
+							<div class="review review_green">
+								<div class="review__content">
+									<div class="review__img"></div>
+									<div class="review__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+									<div class="review__name">Всеволод Петренко</div>
+								</div>
+							</div>
+							<div class="review review_orange">
+								<div class="review__content">
+									<div class="review__img"></div>
+									<div class="review__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+									<div class="review__name">Всеволод Петренко</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__next next _anim-items _anim-fadeInBottom" style="transition-delay: 0.6s;">
+							<span>Другие отзывы</span>
 							<div class="next__button">
 								<img src="img/icons/arrow_down.svg">
 								<img src="img/icons/arrow_down_white.svg">
@@ -170,9 +775,173 @@
 					</div>
 				</div>
 			</section>
+			<section class="conditions" id="conditions">
+				<div class="conditions__container _container">
+					<div class="conditions__ill _anim-items _anim-fadeInBottom"><img src="img/conditions_ill.png"></div>
+					<div class="conditions__content">
+						<div class="conditions__title title _anim-items _anim-fadeInBottom" data-da="conditions__container, 0, 992" style="transition-delay: 0.6s;">Особые условия <br>для мульти-торговли:</div>
+						<div class="conditions__text _anim-items _anim-fadeInBottom" style="transition-delay: 0.7s;">
+							<p>Чем <span>больше</span> ботов вы используете одновременно, тем больше <span>скидка</span> на каждого последующего бота в вашей системе, а максимальный размер скидки может достигать <span>20%!</span></p>
+							<p>Мы понимаем, что для увеличения прибыли необходимо разделять балансы и увеличивать число рабочих аккаунтов, поэтому в TradeOn существует система, которая <span>автоматически снижает цену</span> подписки, если вы <span>одновременно</span> используете от двух ботов и более ботов.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cashback" id="cashback">
+				<div class="cashback__container _container">
+					<div class="cashback__content">
+						<div class="cashback__title title _anim-items _anim-fadeInBottom">Накопительная система кэшбэка</div>
+						<div class="cashback__text _anim-items _anim-fadeInBottom" style="transition-delay: 0.5s;">Мы <span>вернем часть всех средств</span>, которые вы потратили на покупки инструментов от TradeOn. С каждым пополнением баланса растет и ваш <span>процент возврата средств</span>, а став супер-ботоводом — вы начнете получать <span>кэшбэк 5%!</span></div>
+						<div class="cashback__image _anim-items _anim-fadeInBottom" style="transition-delay: 0.7s;">
+							<img src="img/cashback_graphic.svg">
+							<img src="img/cashback_graphic_mob.svg">
+						</div>
+						<div class="cashback__text _anim-items _anim-fadeInBottom">Пополни баланс на любую сумму прямо сейчас и <span>получи кэшбэк</span> для следующих покупок!</div>
+					</div>
+					<div class="cashback__ill _anim-items _anim-fadeInTop" style="transition-delay: 0.6s;"><img src="img/cashout_ill.png"></div>
+				</div>
+			</section>
+			<section class="feedback" id="feedback">
+				<div class="feedback__bg feedback__bg_desktop"><img src="img/feedback_bg.png"></div>
+				<div class="feedback__bg feedback__bg_mob"><img src="img/feedback_mob_bg.png"></div>
+				<div class="feedback__container _container">
+					<div class="feedback__title title _anim-items _anim-fadeInLeft" style="transition-delay: 0.5s;">Остались вопросы <br>или заинтересованы в сотрудничестве?</div>
+					<div class="feedback__content">
+						<div class="feedback-form">
+							<div class="feedback__circles circles" data-speed="7" style="transition: 0.8s ease-in-out 0.05s;"><img src="img/circles_green.svg"></div>
+							<div class="feedback-form__title _anim-items _anim-fadeInLeft" style="transition-delay: 0.6s;">Заполните форму <br>и мы свяжемся с вами</div>
+							<form action="#" method="post" class="feedback-form__body">
+								<div class="feedback-form__input feedback-form__require _anim-items _anim-fadeInBottom" style="transition-delay: 0.6s;">
+									<input type="text" placeholder="Ваше имя..." name="feedbackName">
+								</div>
+								<div class="select feedback-form__select feedback-form__require _anim-items _anim-fadeInBottom" style="transition-delay: 0.8s;">
+									<div class="select__header">
+										<div class="select__current">Выберите бота...</div>
+										<div class="select__icon"><img src="img/icons/caret_down.svg"></div>
+									</div>
+									<div class="select__body">
+										<div class="select__item">TradeOnTm Seller</div>
+										<div class="select__item">TradeOnTm Pro</div>
+										<div class="select__item">TradeOnSteam Pro</div>
+										<div class="select__item">TradeOnSteam Cashout</div>
+									</div>
+								</div>
+								<div class="feedback-form__input feedback-form__require _anim-items _anim-fadeInBottom" style="transition-delay: 0.8s;">
+									<input type="email" placeholder="E-Mail..." name="feedbackEmail">
+								</div>
+								<div class="feedback-form__input _anim-items _anim-fadeInBottom" style="transition-delay: 0.7s;">
+									<input type="text" placeholder="Как с вами связаться? Укажите ваш VK или Telegram..." name="feedbackSocials">
+								</div>
+								<div class="feedback-form__input feedback-form__input_textarea _anim-items _anim-fadeInBottom" style="transition-delay: 0.8s;">
+									<textarea name="feedbackMessage" placeholder="Сообщение..."></textarea>
+								</div>
+								<button type="submit" class="button _anim-items _anim-fadeInBottom" style="transition-delay: 0.9s;"><span>Отправить</span></button>
+							</form>
+						</div>
+						<div class="feedback-faq">
+							<div class="feedback-faq__title _anim-items _anim-fadeInRight" style="transition-delay: 0.6s;">Ответы на частозадаваемые вопросы</div>
+							<div class="feedback-faq__content">
+								<div class="feedback-faq__spoiler spoiler _anim-items _anim-fadeInRight" style="transition-delay: 0.7s;">
+									<div class="spoiler__header">
+										<div class="spoiler__text">Здесь какой-то вопрос?</div>
+										<div class="spoiler__icon"><img src="img/icons/caret_down.svg"></div>
+									</div>
+									<div class="spoiler__body">А вот тут какой-то ответ на какой-то вопрос.</div>
+								</div>
+								<div class="feedback-faq__spoiler spoiler _anim-items _anim-fadeInRight" style="transition-delay: 0.85s;">
+									<div class="spoiler__header">
+										<div class="spoiler__text">Здесь какой-то вопрос?</div>
+										<div class="spoiler__icon"><img src="img/icons/caret_down.svg"></div>
+									</div>
+									<div class="spoiler__body">А вот тут какой-то ответ на какой-то вопрос.</div>
+								</div>
+								<div class="feedback-faq__spoiler spoiler _anim-items _anim-fadeInRight" style="transition-delay: 1s;">
+									<div class="spoiler__header">
+										<div class="spoiler__text">Здесь какой-то вопрос?</div>
+										<div class="spoiler__icon"><img src="img/icons/caret_down.svg"></div>
+									</div>
+									<div class="spoiler__body">А вот тут какой-то ответ на какой-то вопрос.</div>
+								</div>
+								<div class="feedback-faq__spoiler spoiler _anim-items _anim-fadeInRight" style="transition-delay: 1.15s;">
+									<div class="spoiler__header">
+										<div class="spoiler__text">Здесь какой-то вопрос?</div>
+										<div class="spoiler__icon"><img src="img/icons/caret_down.svg"></div>
+									</div>
+									<div class="spoiler__body">А вот тут какой-то ответ на какой-то вопрос.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<!-- подвал сайта -->
-		<footer class="footer"></footer>
+		<footer class="footer">
+	<div class="footer__container _container">
+		<div class="footer__top">
+			<div class="footer__row">
+				<a href="/" class="footer__logo _anim-items _anim-fadeInLeft"><img src="img/logo.png"></a>
+				<ul class="footer__socials socials">
+					<li class="socials__item _anim-items _anim-fadeInRight" style="transition-delay: 0.6s;">
+						<a href="#" class="socials__link"><img src="img/socials/vk.svg"></a>
+					</li>
+					<li class="socials__item _anim-items _anim-fadeInRight" style="transition-delay: 0.7s;">
+						<a href="#" class="socials__link"><img src="img/socials/telegram.svg"></a>
+					</li>
+					<li class="socials__item _anim-items _anim-fadeInRight" style="transition-delay: 0.8s;">
+						<a href="#" class="socials__link"><img src="img/socials/instagram.svg"></a>
+					</li>
+					<li class="socials__item _anim-items _anim-fadeInRight" style="transition-delay: 0.9s;">
+						<a href="#" class="socials__link"><img src="img/socials/youtube.svg"></a>
+					</li>
+					<li class="socials__item _anim-items _anim-fadeInRight" style="transition-delay: 1s;">
+						<a href="#" class="socials__link"><img src="img/socials/twitter.svg"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__row">
+				<nav class="footer-nav" data-da="footer__col_1, 1, 768">
+					<ul class="footer-nav__list">
+						<li class="footer-nav__item _anim-items _anim-fadeInLeft" style="transition-delay: 0.6s;">
+							<a href="#home" class="footer-nav__link">Главная</a>
+						</li>
+						<li class="footer-nav__item _anim-items _anim-fadeInLeft" style="transition-delay: 0.7s;">
+							<a href="#why-we" class="footer-nav__link">О нас</a>
+						</li>
+						<li class="footer-nav__item _anim-items _anim-fadeInLeft" style="transition-delay: 0.8s;">
+							<a href="#instruction" class="footer-nav__link">Инструкция</a>
+						</li>
+						<li class="footer-nav__item _anim-items _anim-fadeInLeft" style="transition-delay: 0.9s;">
+							<a href="#support" class="footer-nav__link">Поддержка</a>
+						</li>
+						<li class="footer-nav__item _anim-items _anim-fadeInLeft" style="transition-delay: 1.0s;">
+							<a href="#plans" class="footer-nav__link">Планы подписки</a>
+						</li>
+						<li class="footer-nav__item _anim-items _anim-fadeInLeft" style="transition-delay: 1.1s;">
+							<a href="#cashback" class="footer-nav__link">Кэшбек</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__profile _anim-items _anim-fadeInRight" style="transition-delay: 1.1s;" data-da="footer__col_1, 0, 768">Личный кабинет</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__col footer__col_1"></div>
+			<div class="footer__col footer__col_2"></div>
+			<div class="footer__contacts" data-da="footer__col_2, 0, 768">
+				<div class="footer-contact">
+					<div class="footer-contact__specify _anim-items _anim-fadeInLeft" style="transition-delay: 0.8s;">Администрация</div>
+					<a href="mailto:admin@tradeon.com" class="footer-contact__person _anim-items _anim-fadeInLeft" style="transition-delay: 0.9s;">admin@tradeon.com</a>
+				</div>
+				<div class="footer-contact">
+					<div class="footer-contact__specify _anim-items _anim-fadeInLeft" style="transition-delay: 0.9s;">Поддержка</div>
+					<a href="mailto:support@tradeon.com" class="footer-contact__person _anim-items _anim-fadeInLeft" style="transition-delay: 1s;">support@tradeon.com</a>
+				</div>
+			</div>
+			<div class="footer__copywrite _anim-items _anim-fadeInRight" style="transition-delay: 1s;" data-da="footer__col_2, 1, 768">TradeOn<br>© 2021. Все права защищены</div>
+		</div>
+	</div>
+</footer>
 	</div>
 	<!-- скрипты -->
 	<script src="js/scripts.min.js"></script>
